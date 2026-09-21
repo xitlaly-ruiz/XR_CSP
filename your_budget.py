@@ -34,6 +34,4 @@ while True:
         break
     except:
         print("This is not what i asked for")
-    
 
-    
