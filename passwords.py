@@ -4,53 +4,46 @@ length = False
 uppercase = False
 lowercase = False
 number = False
-symbol = False 
+symbol = False
 count = 0
 strength = "Weak"
 
 password = input("What is your password: ")
 
-for letter in password:
-    if len(password) >= 8:
-        length = True
+if len(password) >= 8:
+    length = True
 
 for letter in password:
-    if letter .isupper():
+    if letter.isupper():
         uppercase = True
-
-for letter in password: 
-    if letter .islower():
+    if letter.islower():
         lowercase = True
-
-for letter in password:
-    if letter .isnumeric():
+    if letter.isnumeric():
         number = True
+    if letter in ".+?#$%!^&*()":
+        symbol = True
 
-if letter in ".+?#$%!^&*()":
-    symbol = True
-print(f"Has a symbol: {symbol}")
-
-if length == True:
-    count = count + 1 
-if uppercase == True:
-    count = count + 1
-if lowercase == True:
-    count = count + 1 
-if number == True:
-    count = count + 1 
-if symbol == True:
-    count = count + 1 
+if length:
+    count += 1
+if uppercase:
+    count += 1
+if lowercase:
+    count += 1
+if number:
+    count += 1
+if symbol:
+    count += 1
 
 if count == 5:
     strength = "Strong"
-if count <= 4:
-    strength == "Medium"
-if count < 3:
+elif count >= 3:
+    strength = "Medium"
+else:
     strength = "Weak"
 
+print(f"Has a symbol: {symbol}")
 print(f"You have a {strength} password.")
 print(f"You have done {count}/5")
-print(f"If you dont have a 5/5, you should check if you have a uppercase letter, lowercase letter, a number, and a symbol.")
-
+print(f"If you don't have a 5/5, you should check if you have an uppercase letter, lowercase letter, a number, and a symbol.")
 
  
