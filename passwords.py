@@ -41,9 +41,24 @@ elif count >= 3:
 else:
     strength = "Weak"
 
+print(f"At least 8 characters: {length}")
+print(f"Has an uppercase letter: {uppercase}")
+print(f"Has a lowercase letter: {lowercase}")
+print(f"Has a number: {number}")
 print(f"Has a symbol: {symbol}")
 print(f"You have a {strength} password.")
 print(f"You have done {count}/5")
-print(f"If you don't have a 5/5, you should check if you have an uppercase letter, lowercase letter, a number, and a symbol.")
+if strength != "Strong":
+    print("Missing:")
+    if not length:
+        print("At least 8 characters")
+    if not uppercase:
+        print("An uppercase letter")
+    if not lowercase:
+        print("A lowercase letter")
+    if not number:
+        print("A number")
+    if not symbol:
+        print("A symbol")
 
  
