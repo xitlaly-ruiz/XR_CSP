@@ -6,7 +6,10 @@
 
 userpick = input("Which one would you like to do , encrypt or decript: ")
 message = input("Enter the message you would like for this: ")
-shiftamount = input("How much would you like to shift by: ")
+shiftamount = int(input("How much would you like to shift by: "))
 
-number = shiftamount
-
+def cipher_shiftamount(message,shiftamount):
+    result = ""
+    for chr in message:
+        if chr.isupper():
+           # resut += (char((ord)(chr) - ))
