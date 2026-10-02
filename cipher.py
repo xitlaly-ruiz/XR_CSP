@@ -11,4 +11,4 @@ shiftamount = int(input("How much would you like to shift by: "))
 def cipher_shiftamount(message,shiftamount):
     result = ""
     for chr in message:
-        if chr.isupper(): 
+        if chr.isupper():
