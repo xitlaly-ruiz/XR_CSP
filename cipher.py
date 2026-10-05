@@ -8,13 +8,12 @@ userpick = input("Do you want to (E)encrypt or (D)decrypt a message: ").strip().
 message = input("Enter the message you would like for this: ")
 shiftamount = int(input("How much would you like to shift by: "))
 
-<<<<<<< HEAD
 def cipher_shiftamount(message,shiftamount):
     result = ""
     for chr in message:
         if chr.isupper():
-=======
-def caesar_shift(message, shiftamount):
+
+def caesar_shift(message,shiftamount):
     the_result = ""
     for char in message:
         if char.isupper():
@@ -32,9 +31,3 @@ if userpick == "E":
 elif userpick == "D":
     the_result = caesar_shift(message, -shiftamount)
     print(f"Your decrypted message is: {the_result}")
-
-
-
-        
-
->>>>>>> 715036f9fa3db811e02b6be80645e039e46527f5

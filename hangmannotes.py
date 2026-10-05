@@ -1,4 +1,5 @@
 # create a list of ten words cat,dog,bird
+
 # create another file holds win/loss count
 # use split(",") on the content of the words txt document to create your list of words
 # Pull win and loose totals from the other txt file and save then as 2 seperate variables
@@ -18,7 +19,7 @@
     |   /\\
     |________
     """
-# Function to show the letter and spaces (The correct word, leyyers tat have been guessed)
+# Function to show the letter and spaces (The correct word, letters that have been guessed)
 #Loop over the correct word
     #variable for dispaly word (starts as an empty sting)
     #check if letter has been guessed

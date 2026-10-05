@@ -29,7 +29,7 @@ print("GOOSE!!!!")
 sibilings = ["Galilea", "Nazareth", "Leticia", "Esperanza"] #<= surround by brackets
 print(sibilings[2])
 #adding to a list
-sibilings.append("Yaneli") # <= adds the item to the end of the list
+sibilings.append("lll") # <= adds the item to the end of the list
 
 sibilings.insert(3, "Xitlaly")
 
